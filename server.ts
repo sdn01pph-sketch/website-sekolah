@@ -76,7 +76,7 @@ if (!adminCheck) {
 // Seed Settings if not exists
 const schoolNameCheck = db.prepare("SELECT * FROM settings WHERE key = 'school_name'").get();
 if (!schoolNameCheck) {
-  db.prepare("INSERT INTO settings (key, value) VALUES (?, ?)").run('school_name', 'SD Harapan Bangsa');
+  db.prepare("INSERT INTO settings (key, value) VALUES (?, ?)").run('school_name', 'SD N 01 PAPAHAN');
 }
 const heroImageCheck = db.prepare("SELECT * FROM settings WHERE key = 'hero_image'").get();
 if (!heroImageCheck) {
