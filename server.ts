@@ -151,7 +151,7 @@ if (articleCheck.count === 0) {
   const insertArticle = db.prepare('INSERT INTO articles (title, content, imageUrl, date, author) VALUES (?, ?, ?, ?, ?)');
   insertArticle.run(
     'Penerimaan Siswa Baru 2024',
-    'SD Harapan Bangsa membuka pendaftaran siswa baru untuk tahun ajaran 2024/2025. Segera daftarkan putra-putri Anda!',
+    'SD N 01 PAPAHAN membuka pendaftaran siswa baru untuk tahun ajaran 2024/2025. Segera daftarkan putra-putri Anda!',
     '/uploads/placeholder-news.svg',
     new Date().toISOString().split('T')[0],
     'Admin'
